@@ -19,7 +19,7 @@ export default React.createClass({
                 disabled={this.isDisabled()}
                 onClick={() => this.props.vote(entry)}>
                 <h1>{entry}</h1>
-                {this.hasVotedFor(entry) ? <div className="label">Voted</div>: null}
+                {this.hasVotedFor(entry) ? <div className="label">Voted</div>: ''}
             </button>
         );
         return (<div className="voting">{buttons}</div>);
